@@ -1,14 +1,28 @@
-package pl.marcinblok.controlStatements.conditionalStatements.ifStatement;
+package pl.marcinblok.controlStatements.conditionalStatements.ifElse;
 
-import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
          /*
+
+         ------if------
+
+         if(warunek){
+            instrukcj1
+        }else{
+            instrukcja2
+         }
+
+         -----If-else-if------
+
         if(warunek){
-            instrukcje....
+            instrukcj1
+        }else if(warunek){
+            instrukcja2
+        }else{
+
         }
         */
 
