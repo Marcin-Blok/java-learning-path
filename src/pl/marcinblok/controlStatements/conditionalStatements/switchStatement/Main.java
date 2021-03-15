@@ -37,7 +37,7 @@ public class Main {
         System.out.println("What's your choice?");
         int choice = sc.nextInt();
 
-        switch (choice){
+        switch (choice) {
             case 1:
                 System.out.println("You chose pizza...enjoy!");
                 break;
@@ -52,6 +52,20 @@ public class Main {
                 break;
             default:
                 System.out.println("You didn't choose anything of the menu...good luck");
+                break;
         }
+
+
+        /*  Nowa wersja instrukcji switch
+
+        switch (choice) {
+            case 1 -> System.out.println("You chose pizza...enjoy!");
+            case 2 -> System.out.println("You chose Spaghetti...enjoy!");
+            case 3 -> System.out.println("You chose Burger...enjoy!");
+            case 4 -> System.out.println("You chose Sushi...enjoy!");
+            default -> System.out.println("You didn't choose anything of the menu...good luck");
+        }
+        */
+
     }
 }
