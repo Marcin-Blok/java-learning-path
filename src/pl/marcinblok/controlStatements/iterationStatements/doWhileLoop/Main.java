@@ -34,5 +34,6 @@ public class Main {
             case 4 -> System.out.println("\"do-while instruction\"\ndo{\n\tinstructions;\n}while(condition);");
             case 5 -> System.out.println("\"for instruction\"\nfor(inicialization; condition; iteration){\n\tinstruction;\n}");
         }
+        sc.close();
     }
 }

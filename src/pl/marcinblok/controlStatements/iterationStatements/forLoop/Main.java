@@ -25,7 +25,7 @@ public class Main {
         /*
         ---------for-each----------
 
-        for(typ zmiennej iteracyjnej : kolekcjca){
+        for(typ zmiennej iteracyjnej : kolekcja){
             blok instrukcji
         }
          */
