@@ -21,11 +21,10 @@ public class Main {
 
         // Displaying even numbers only
 
-        int[] numbers = new int[15];
+        int[] numbers = new int[35];
         for (int i = 0; i < numbers.length; i++) {
-            for (int value : numbers) {
                 numbers[i] = i;
-            }
+
             if (numbers[i] % 2 == 0) {
                 continue;
             }

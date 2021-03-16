@@ -1,4 +1,4 @@
-package pl.marcinblok.controlstatements.conditionalStatements.ifElse;
+package pl.marcinblok.controlStatements.conditionalStatements.if_else;
 
 import java.util.Scanner;
 
