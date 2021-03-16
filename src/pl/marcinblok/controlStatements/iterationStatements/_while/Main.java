@@ -1,4 +1,4 @@
-package pl.marcinblok.controlStatements.iterationStatements.whileLoop;
+package pl.marcinblok.controlstatements.iterationStatements.whileLoop;
 
 import java.util.Random;
 import java.util.Scanner;

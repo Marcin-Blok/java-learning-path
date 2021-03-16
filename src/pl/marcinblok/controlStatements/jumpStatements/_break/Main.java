@@ -1,4 +1,5 @@
-package pl.marcinblok.controlStatements.jumpStatements;
+package pl.marcinblok.controlStatements.jumpStatements._break;
+
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package pl.marcinblok.controlStatements.conditionalStatements.switchStatement;
+package pl.marcinblok.controlstatements.conditionalStatements.switchStatement;
 
 import java.util.Scanner;
 
