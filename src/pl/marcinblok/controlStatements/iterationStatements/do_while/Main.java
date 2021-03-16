@@ -1,4 +1,4 @@
-package pl.marcinblok.controlstatements.iterationStatements.doWhileLoop;
+package pl.marcinblok.controlStatements.iterationStatements.do_while;
 
 import java.util.Scanner;
 

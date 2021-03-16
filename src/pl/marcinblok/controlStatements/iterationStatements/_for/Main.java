@@ -1,4 +1,4 @@
-package pl.marcinblok.controlstatements.iterationStatements.forLoop;
+package pl.marcinblok.controlStatements.iterationStatements._for;
 
 import java.util.Arrays;
 
