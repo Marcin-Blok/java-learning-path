@@ -1,5 +1,8 @@
 package pl.marcinblok.multithreading;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class ThreadExample {
     public static void main(String[] args) {
 
@@ -31,5 +34,24 @@ public class ThreadExample {
          * Metoda run() uruchamia zadanie w wątku głównym, natomiast metoda start() uruchamia zadanie w nowym, osobnym wątku.
          */
 
+        System.out.println();
+
+
+        // Drugi sposób tworzenia wątków poprzez utworzenie puli wątków - sposób zalecany
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        executorService.submit(ThreadExample::numbers);
+        executorService.submit(ThreadExample::numbers);
+        executorService.shutdown();
+        /* Metody shutdown() i shutdoenNow() - różnice.
+        shutdoenNow() - stara się zamknąć/ubić wątek bez czekania na zakończenie
+        shutdoen() - zamyka pulę ale dopiero po zakończeniu wszystkich wykonywanych wątków
+         */
+
+    }
+
+    public static void numbers(){
+        for (int i = 0; i < 55; i++) {
+            System.out.println(Thread.currentThread().getName() + " " + i);
+        }
     }
 }
