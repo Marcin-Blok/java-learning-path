@@ -35,9 +35,37 @@ public class ThreadExample {
          */
 
         // System.out.println();
+
+
+        /*-------Wyścig wątków głównego i potomnego--------------------------------------------------*/
+
+//        Thread mainThread = Thread.currentThread();
+//        mainThread.setName("Wątek główny");
+//
+//        MyThread newThread = new MyThread();
+//        newThread.thread.start();
+//
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println(mainThread.getName() + " " + i);
+//            try {
+//                mainThread.sleep(500);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
+
+        /*--------------------------------------------------------------------------------------------------------------------------*/
+        // Drugi sposób tworzenia wątków, poprzez rozszerzanie klasy Thread
+
+        MyThreadExtendsThread myThreadExtendsThread = new MyThreadExtendsThread("Nowy wątek");
+        myThreadExtendsThread.start();
+
+
+
+
         /*--------------------------------------------------------------------------------------------------------------------------*/
 
-        // Drugi sposób tworzenia wątków poprzez utworzenie puli wątków - sposób zalecany
+        // Trzeci sposób tworzenia wątków poprzez utworzenie puli wątków - sposób zalecany
 //        ExecutorService executorService = Executors.newFixedThreadPool(2);
 //        executorService.submit(ThreadExample::numbers);
 //        executorService.submit(ThreadExample::numbers);
@@ -46,24 +74,6 @@ public class ThreadExample {
         shutdoenNow() - stara się zamknąć/ubić wątek bez czekania na zakończenie
         shutdoen() - zamyka pulę ale dopiero po zakończeniu wszystkich wykonywanych wątków
          */
-
-        /*-------Wyścig wątków głównego i potomnego--------------------------------------------------*/
-
-        Thread mainThread = Thread.currentThread();
-        mainThread.setName("Wątek główny");
-
-        MyThread newThread = new MyThread();
-        newThread.thread.start();
-
-        for (int i = 0; i < 10; i++) {
-            System.out.println(mainThread.getName() + " " + i);
-            try {
-                mainThread.sleep(500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
 
 
     }
