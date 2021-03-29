@@ -1,8 +1,8 @@
-package pl.marcinblok.multithreading;
+package pl.marcinblok.multithreading.classes;
 
 public class MyThread implements Runnable{
 
-    Thread thread;
+    public Thread thread;
 
     public MyThread() {
         thread = new Thread(this,"Wątek potomny");

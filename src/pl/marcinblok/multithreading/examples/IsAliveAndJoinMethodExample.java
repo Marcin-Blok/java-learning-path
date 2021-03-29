@@ -1,4 +1,7 @@
-package pl.marcinblok.multithreading;
+package pl.marcinblok.multithreading.examples;
+
+
+import pl.marcinblok.multithreading.classes.MyThread;
 
 public class IsAliveAndJoinMethodExample {
     public static void main(String[] args) {

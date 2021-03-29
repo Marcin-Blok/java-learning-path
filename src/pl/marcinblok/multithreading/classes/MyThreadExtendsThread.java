@@ -1,4 +1,4 @@
-package pl.marcinblok.multithreading;
+package pl.marcinblok.multithreading.classes;
 
 public class MyThreadExtendsThread extends Thread{
 
