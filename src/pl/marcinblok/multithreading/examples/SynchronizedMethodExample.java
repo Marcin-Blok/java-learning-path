@@ -10,7 +10,5 @@ public class SynchronizedMethodExample {
         SynchronizedThread reader1 = new SynchronizedThread(synchronizedMethod, "Reader1");
         SynchronizedThread reader2 = new SynchronizedThread(synchronizedMethod, "Reader2");
 
-
-
     }
 }
