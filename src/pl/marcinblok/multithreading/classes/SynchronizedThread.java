@@ -2,7 +2,6 @@ package pl.marcinblok.multithreading.classes;
 
 public class SynchronizedThread implements Runnable{
 
-    String name;
     SynchronizedMethod s1;
     public Thread t;
 
@@ -15,25 +14,26 @@ public class SynchronizedThread implements Runnable{
 
 
 
-//    public void run() {
-//        try {
-//            s1.reading();
-//        } catch (InterruptedException e) {
-//            System.out.println("Thread was interupted");
-//        }
-//    }
+    public void run() {
+        try {
+            System.out.println(t.getName() + " ");
+            s1.reading();
+        } catch (InterruptedException e) {
+            System.out.println("Thread was interupted");
+        }
+    }
 
     // Przykład z wykorzystaniem bloku synchronized
-    public void run() {
-        synchronized (s1){
-            System.out.print(t.getName() + " ");
-            try {
-                s1.reading();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-        }
-
-    }
+//    public void run() {
+//        synchronized (s1){
+//            System.out.print(t.getName() + " ");
+//            try {
+//                s1.reading();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//
+//        }
+//
+//    }
 }

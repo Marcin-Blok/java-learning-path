@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 public class ThreadExample {
     public static void main(String[] args) {
 
-        // Pierwszy sposób - niezalecany
+        // Pierwszy sposób tworzenia wątków, poprzez implementację interfejsu Runnable
         Thread thread1 = new Thread(new Runnable() {
             // W metodzie run(), umieszczam kod który ma być uruchomiony w osobnym wątku
             @Override
@@ -73,9 +73,9 @@ public class ThreadExample {
         executorService.submit(ThreadExample::numbers);
         executorService.submit(ThreadExample::numbers);
         executorService.shutdown();
-        /* Metody shutdown() i shutdoenNow() - różnice.
-        shutdoenNow() - stara się zamknąć/ubić wątek bez czekania na zakończenie
-        shutdoen() - zamyka pulę ale dopiero po zakończeniu wszystkich wykonywanych wątków
+        /* Metody shutdown() i shutdownNow() - różnice.
+        shutdownNow() - stara się zamknąć/ubić wątek bez czekania na zakończenie
+        shutdown() - zamyka pulę ale dopiero po zakończeniu wszystkich wykonywanych wątków
          */
 
 
